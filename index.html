@@ -134,5 +134,21 @@
             </div>
         </div>
     </footer>
+    <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+        // Basculer la classe light-mode
+        body.classList.toggle('light-mode');
+
+        // Changer l'icône (Soleil <-> Lune)
+        if (body.classList.contains('light-mode')) {
+            toggleButton.classList.replace('fa-sun', 'fa-moon');
+        } else {
+            toggleButton.classList.replace('fa-moon', 'fa-sun');
+        }
+    });
+</script>
 </body>
 </html>
