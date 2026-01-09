@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1005/1005141.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <title>Portfolio - Aymen Khlifi</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Aymen.dev</div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact" class="btn-nav">Me contacter</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    
+    <header id="accueil" class="hero">
+        <div class="hero-content">
+            <span class="greeting">Bonjour, je suis</span>
+            <h1>Aymen Khlifi</h1>
+            <h2>Développeur Web Full Stack</h2>
+            <p>Je conçois des expériences numériques modernes, performantes et esthétiques.</p>
+            <div class="cta-group">
+                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-outline">Télécharger CV</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="protraitAymen.png" alt="Portrait de Aymen Khlifi">
+        </div>
+    </header>
+
+    <section id="a-propos" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>À propos de moi</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Passionné par le code depuis plusieurs années, j'aime transformer des idées complexes en interfaces simples et intuitives. Mon objectif est de créer des applications web qui facilitent la vie des utilisateurs.</p>
+                    <p>Je suis spécialisé dans l'écosystème JavaScript, mais je reste toujours curieux d'apprendre de nouvelles technologies.</p>
+                    
+                    <h3>Mes Compétences</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">HTML5 & CSS3</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mes Réalisations</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-img gradient-1">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Shop</h3>
+                        <p>Une application de vente en ligne complète avec panier, paiement et gestion utilisateur.</p>
+                        <div class="tech-stack">
+                            <small>React</small> <small>Node.js</small>
+                        </div>
+                        <a href="#" class="btn-link">Voir le code <i class="fab fa-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img gradient-2">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager App</h3>
+                        <p>Outil de gestion de productivité permettant de créer, trier et analyser ses tâches quotidiennes.</p>
+                        <div class="tech-stack">
+                            <small>Vue.js</small> <small>Firebase</small>
+                        </div>
+                        <a href="#" class="btn-link">Voir le code <i class="fab fa-github"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img gradient-3">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Movie Database</h3>
+                        <p>Interface explorant une API de cinéma pour afficher les tendances et les notations.</p>
+                        <div class="tech-stack">
+                            <small>JS Vanilla</small> <small>API REST</small>
+                        </div>
+                        <a href="#" class="btn-link">Voir le code <i class="fab fa-github"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Aymen Khlifi. Tous droits réservés.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
