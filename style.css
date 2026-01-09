@@ -384,3 +384,24 @@ footer {
         cursor: pointer;
     }
 }
+/* =========================
+   MODE CLAIR (LIGHT MODE)
+   ========================= */
+body.light-mode {
+    --bg-dark: #ffffff;       /* Fond devient blanc */
+    --bg-card: #f1f5f9;       /* Cartes deviennent gris très clair */
+    --text-light: #0f172a;    /* Texte devient foncé */
+    --text-gray: #475569;     /* Texte gris devient plus foncé */
+}
+
+/* Ajustement spécifique pour la navbar en mode clair */
+body.light-mode .navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Ajustement ombre des cartes en mode clair */
+body.light-mode .project-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
