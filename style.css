@@ -260,3 +260,127 @@ section {
     transform: scale(1.05);
 }
 
+/* =========================================
+   6. PROJETS (CARDS)
+   ========================================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--bg-card);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Consigne : Effet hover sur les cards (Levitation) */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+/* Consigne : Personnaliser visuels projets avec dégradés */
+.project-img {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-img i {
+    font-size: 3rem;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Gradients personnalisés pour chaque projet */
+.gradient-1 { background: linear-gradient(45deg, #ff6b6b, #ee5253); }
+.gradient-2 { background: linear-gradient(45deg, #4834d4, #686de0); }
+.gradient-3 { background: linear-gradient(45deg, #f0932b, #ffbe76); }
+
+.project-content {
+    padding: 25px;
+}
+
+.project-content h3 {
+    font-family: var(--font-title);
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-bottom: 20px;
+}
+
+.tech-stack small {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 0.75rem;
+}
+
+.btn-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   7. FOOTER & RESPONSIVE
+   ========================================= */
+footer {
+    padding: 40px 0;
+    margin-top: 80px;
+    background-color: #0b1120;
+    text-align: center;
+}
+
+.socials {
+    margin-top: 15px;
+}
+
+.socials a {
+    color: var(--text-gray);
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.socials a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        padding: 120px 20px 60px;
+    }
+
+    .hero-image {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    
+    .nav-links {
+        display: none; /* Simplification pour la démo CodePen */
+    }
+    
+    .burger {
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
