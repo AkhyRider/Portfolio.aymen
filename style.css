@@ -80,7 +80,8 @@ ul {
 }
 
 /* Consigne : Effet Hover sur liens (Barre qui apparait) */
-.nav-links a::after {
+/* CODE CORRIGÉ */
+.nav-links a:not(.btn-nav)::after {
     content: '';
     display: block;
     width: 0;
